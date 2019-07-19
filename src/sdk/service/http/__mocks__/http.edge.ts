@@ -1,8 +1,5 @@
 import { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { MockNotFoundResponse } from '../../../config/__mocks__/errors';
-import {
-  MockEdgeGatewayFirewallSourceObjectsResponse
-} from '../../../model/edge/edge-gateway-firewall/__mocks__/edge-gateway-firewall';
 import { MockEdgeSslVpnResponse } from '../../../model/edge/ssl-vpn/__mocks__/edge-ssl-vpn';
 import {
   MockEdgeFirewallCheckpointResponse, MockEdgeFirewallCheckpointsResponse, MockEdgeFirewallLogsResponse,
@@ -64,8 +61,8 @@ export async function MockEdgeGet(url: string, config?: AxiosRequestConfig): Pro
     case /\/edges\/[^\/]+\/performance\/[^\/]+$/.test(url):
       // get an edge performance.
       return MockEdgeStatsResponse;
-    case /\/edge-gateways\/[^\/]+\/firewall\/sources\/[^\/]+$/.test(url):
-      return MockEdgeGatewayFirewallSourceObjectsResponse;
+    // case /\/edge-gateways\/[^\/]+\/firewall\/sources\/[^\/]+$/.test(url):
+    //   return MockEdgeGatewayFirewallSourceObjectsResponse;
     default:
       return MockNotFoundResponse;
   }
