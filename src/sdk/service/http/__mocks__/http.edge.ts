@@ -1,6 +1,8 @@
 import { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { MockNotFoundResponse } from '../../../config/__mocks__/errors';
-import { MockEdgeGatewayFirewallSourceObjectsResponse } from '../../../model/edge/edge-gateway-firewall/__mocks__/edge-gateway-firewall';
+import {
+  MockEdgeGatewayFirewallSourceObjectsResponse
+} from '../../../model/edge/edge-gateway-firewall/__mocks__/edge-gateway-firewall';
 import { MockEdgeSslVpnResponse } from '../../../model/edge/ssl-vpn/__mocks__/edge-ssl-vpn';
 import {
   MockEdgeFirewallCheckpointResponse, MockEdgeFirewallCheckpointsResponse, MockEdgeFirewallLogsResponse,

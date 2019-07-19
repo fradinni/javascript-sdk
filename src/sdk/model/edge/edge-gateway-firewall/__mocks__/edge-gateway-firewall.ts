@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios';
 
-export const MockEdgeGatewayFirewallSourceObjectsResponse: Promise<AxiosResponse> = new Promise<AxiosResponse>(
+export const MockEdgeGatewayFirewallSourceObjectsResponse = new Promise<AxiosResponse>(
     function(resolve) {
       resolve({
         data: {},
