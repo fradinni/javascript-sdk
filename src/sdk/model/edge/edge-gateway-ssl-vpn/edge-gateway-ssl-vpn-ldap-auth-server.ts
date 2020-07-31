@@ -106,6 +106,14 @@ export class EdgeGatewaySslVpnLdapAuthServer extends EdgeGatewaySslVpnAuthServer
   }
 
   /**
+   * Get certificate sha1 digest.
+   * @returns {string}
+   */
+  get certificateSha1Digest(): string {
+    return this._json.certificate_sha1_digest;
+  }
+
+  /**
    * Get auth server type.
    * @returns {EdgeGatewaySslVpnAuthServerType}
    */
