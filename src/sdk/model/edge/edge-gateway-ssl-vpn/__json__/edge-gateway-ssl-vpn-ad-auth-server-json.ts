@@ -13,4 +13,5 @@ export interface EdgeGatewaySslVpnAdAuthServerJson extends EdgeGatewaySslVpnAuth
   bind_password: string;
   login_attribute_name: string;
   search_filter: string;
+  certificate_sha1_digest: string;
 }
