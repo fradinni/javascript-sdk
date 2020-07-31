@@ -8,6 +8,14 @@ export class EdgeGatewaySslVpnAuthServer {
   }
 
   /**
+   * Get object id.
+   * @returns {string}
+   */
+  get objectId(): string {
+    return this._authServerJson.object_id;
+  }
+
+  /**
    * Get auth server type.
    * @returns {EdgeGatewaySslVpnAuthServerType}
    */

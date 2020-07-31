@@ -50,6 +50,22 @@ export class EdgeGatewaySslVpnRsaAuthServer extends EdgeGatewaySslVpnAuthServer 
   }
 
   /**
+   * Get config file data.
+   * @returns {string}
+   */
+  get configFileData(): string {
+    return this._json.config_file_data;
+  }
+
+  /**
+   * Get config file name.
+   * @returns {string}
+   */
+  get configFileName(): string {
+    return this._json.config_file_name;
+  }
+
+  /**
    * Get source ip.
    * @returns {string}
    */
